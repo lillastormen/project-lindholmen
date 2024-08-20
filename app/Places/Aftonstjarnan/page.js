@@ -5,7 +5,7 @@ import PlaceDetails from "@/components/PlaceDetails";
 export default function Aftonstjarnan() {
   const placeInformation = {
     clipTitle: '',
-    placeName: 'Aftonstjärnan',
+    placeName: 'Aftonstjärnan dskkhfsidohf',
     imageUrl: '/images/aftis.jpg',
     description: 'Description comes here',
   };
