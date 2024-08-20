@@ -10,8 +10,6 @@ export default function Menu () {
     
       <div className="flex flex-col">
         <div className="text-base text-white"><Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">Home</Link></div>
-        <div className="text-base text-white"><Link className={`link ${pathname === '/map' ? 'active' : ''}`} href="/map">Map</Link></div>
-        <div className="text-base text-white"><Link className={`link ${pathname === '/timetable' ? 'active' : ''}`} href="/timetable">Time</Link></div>
       </div>
   );
 
