@@ -8,7 +8,7 @@ export default function Home() {
   const pathname = usePathname();
 
   return (
-    <main className="relative flex min-h-screen justify-center flex-col items-center">
+    <main className="relative flex h-screen justify-center flex-col items-center">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         type="video/mp4"
