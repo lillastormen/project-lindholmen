@@ -8,6 +8,7 @@ export default function Varvet() {
     placeName: 'Varvet',
     imageUrl: '/images/aftis.jpg',
     description: 'Description comes here',
+    audio: '/pirate.mp3'
   };
 
   return (

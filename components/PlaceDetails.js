@@ -5,11 +5,13 @@ import PlayPauseBtn from "./PlayPauseBtn";
 import BtnContainer from "./BtnContainer";
 
 
-const PlaceDetails = ({ placeName, imageUrl, description }) => {
+const PlaceDetails = ({ placeName, imageUrl, description, audio }) => {
     return (
         <div className="flex flex-col">
          
-            <BtnContainer />
+            <BtnContainer 
+                audio={audio}
+            />
            
             <div className="w-full h-64 relative mb-4">
                 <Image 
