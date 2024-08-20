@@ -1,9 +1,16 @@
 import Image from "next/image";
+import Header from "@/components/Header";
+import PlaceDetails from "@/components/PlaceDetails";
 
 export default function Telefonstolpen() {
+  const placeInformation = {
+    clipTitle: '',
+    placeName: 'Telefonstolpen',
+    imageUrl: '/images/aftis.jpg',
+    description: 'Description comes here',
+  };
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Telefonstolpen</h1>
-    </main>
+      <PlaceDetails {...placeInformation} />
   );
 }

@@ -1,10 +1,20 @@
-import Image from "next/image";
 
-const PlaceDetails = ({ clipTitle, placeName, button, imageUrl, description, comments }) => {
+
+import Image from "next/image";
+import PlayPauseBtn from "./PlayPauseBtn";
+import BtnContainer from "./BtnContainer";
+
+
+const PlaceDetails = ({ placeName, imageUrl, description, audio, time, audioTitle }) => {
     return (
-        <div className="max-w-3x1 mx-auto p-4">
-            <h2 className="text-4xl font-bold mb-4">{clipTitle}Clip title</h2>
-            <div>{button}Play/pause button</div>
+        <div className="flex flex-col">
+         
+            <BtnContainer 
+                audio={audio}
+                time={time}
+                title={audioTitle}
+            />
+           
             <div className="w-full h-64 relative mb-4">
                 <Image 
                     src={imageUrl}
@@ -18,7 +28,7 @@ const PlaceDetails = ({ clipTitle, placeName, button, imageUrl, description, com
                 </div>
             </div>
             <p className="text-lg leading-relaxed">{description}</p>
-            <div>{comments}Comments section here</div>
+        
         </div>
     )
 }
