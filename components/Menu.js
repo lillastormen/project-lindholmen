@@ -9,7 +9,7 @@ export default function Menu() {
 
   return (
     <>
-      <div className="text-base">
+      <div className="flex justify-center">
         <Link className={`link ${pathname === "/" ? "active" : ""}`} href="/">
           <Image
             src="/Logo.png"

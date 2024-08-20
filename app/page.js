@@ -33,8 +33,8 @@ export default function Home() {
         Upptäck <br /> Lindholmen
       </h1>
 
-      <div className="flex flex-col gap-4 text-center text-black w-[300px]">
-        <div className="bg-white/[0.4] rounded-[10px] p-4 mb-24">
+      <div className="flex flex-col gap-4 text-center text-black w-[350px]">
+        <div className="bg-white/[0.4] rounded-[10px] p-4 mb-12">
           <p className="text-lg ">
             Ut och gå och låt din berättelse bli en del av Lindholmens historia.
           </p>
