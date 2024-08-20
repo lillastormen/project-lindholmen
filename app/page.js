@@ -18,8 +18,6 @@ export default function Home() {
         muted
       >
         <source src="/herovideo.mp4" type="video/mp4" />
-        <source src="/herovideo.webm" type="video/webm" />
-        <source src="/herovideo.ogv" type="video/ogg" />
       </video>
       <a
         className="absolute left-2 bottom-2 text-white/[0.2]"
