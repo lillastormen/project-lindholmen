@@ -7,7 +7,7 @@ import BtnContainer from "./BtnContainer";
 
 const PlaceDetails = ({ placeName, imageUrl, description, audio, time, audioTitle }) => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center px-5">
          
             <BtnContainer 
                 audio={audio}
@@ -15,19 +15,19 @@ const PlaceDetails = ({ placeName, imageUrl, description, audio, time, audioTitl
                 title={audioTitle}
             />
            
-            <div className="w-full h-64 relative mb-4">
-                <Image 
+            <div className="w-full h-64 relative mb-4 flex justify-center items-center">
+                <Image
                     src={imageUrl}
                     alt={placeName}
                     layout="fill"
                     object="cover"
-                    className="rounded-lg"
+                    className=""
                 />
                  <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center">
-                    <h1 className="text-3xl font-bold text-white">{placeName}</h1>
+                    <h1 className="text-3xl font-bold text-beige">{placeName}</h1>
                 </div>
             </div>
-            <p className="text-lg leading-relaxed">{description}</p>
+            <p className="text-lg leading-relaxed ">{description}</p>
         
         </div>
     )
