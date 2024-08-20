@@ -1,10 +1,11 @@
 import Image from "next/image";
+import PlayPauseBtn from "./PlayPauseBtn";
 
-const PlaceDetails = ({ clipTitle, placeName, button, imageUrl, description, comments }) => {
+const PlaceDetails = ({ clipTitle, placeName, imageUrl, description }) => {
     return (
         <div className="max-w-3x1 mx-auto p-4">
             <h2 className="text-4xl font-bold mb-4">{clipTitle}Clip title</h2>
-            <div>{button}Play/pause button</div>
+            <PlayPauseBtn />
             <div className="w-full h-64 relative mb-4">
                 <Image 
                     src={imageUrl}
@@ -18,7 +19,7 @@ const PlaceDetails = ({ clipTitle, placeName, button, imageUrl, description, com
                 </div>
             </div>
             <p className="text-lg leading-relaxed">{description}</p>
-            <div>{comments}Comments section here</div>
+            <div>Comments section here</div>
         </div>
     )
 }
