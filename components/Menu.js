@@ -12,7 +12,7 @@ export default function Menu() {
       <div className="text-base">
         <Link className={`link ${pathname === "/" ? "active" : ""}`} href="/">
           <Image
-            src="/logo.png"
+            src="/Logo.png"
             alt="Logo"
             width={200}
             height={200}
