@@ -4,11 +4,13 @@ import PlaceDetails from "@/components/PlaceDetails";
 
 export default function Varvet() {
   const placeInformation = {
-    clipTitle: '',
+    audioTitle: 'Anders på varvet',
+    audio: '/pirate.mp3',
+    time: "5 min",
     placeName: 'Varvet',
     imageUrl: '/images/aftis.jpg',
     description: 'Description comes here',
-    audio: '/pirate.mp3'
+ 
   };
 
   return (
