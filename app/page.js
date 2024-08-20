@@ -11,12 +11,16 @@ export default function Home() {
     <main className="relative flex min-h-screen flex-col items-center pt-32">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-        src="/herovideo.mp4"
         type="video/mp4"
         autoPlay
+        playsInline
         loop
         muted
-      />
+      >
+        <source src="/herovideo.mp4" type="video/mp4" />
+        <source src="/herovideo.webm" type="video/webm" />
+        <source src="/herovideo.ogv" type="video/ogg" />
+      </video>
       <a
         className="absolute left-2 bottom-2 text-white/[0.2]"
         href="https://www.instagram.com/capturedbyfelix"
