@@ -1,5 +1,8 @@
+
+
 import Image from "next/image";
 import PlayPauseBtn from "./PlayPauseBtn";
+
 
 const PlaceDetails = ({ clipTitle, placeName, imageUrl, description }) => {
     return (
