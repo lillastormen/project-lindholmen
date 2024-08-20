@@ -3,7 +3,7 @@ import Image from "next/image";
 const PlaceDetails = ({ clipTitle, placeName, button, imageUrl, description, comments }) => {
     return (
         <div className="max-w-3x1 mx-auto p-4">
-            <h1 className="text-4xl font-bold mb-4">{clipTitle}</h1>
+            <h2 className="text-4xl font-bold mb-4">{clipTitle}Clip title</h2>
             <div>{button}Play/pause button</div>
             <div className="w-full h-64 relative mb-4">
                 <Image 
