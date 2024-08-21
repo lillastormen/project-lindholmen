@@ -25,18 +25,23 @@ export default function Time() {
       title: 'Title 3',
       time: 5,
       file: "/pirate.mp3"
+    },
+     {
+      title: 'Title 4',
+      time: 15,
+      file: "/pirate.mp3"
     }
   ];
 
   return (
   <>
-      <h2 className="font-inder text-xl p-5">Välj en historia i listan nedan, sätt på dig hörlurarna och promenera tillbaka i tiden!</h2>
+      <h2 className="font-inder text-xl text-center p-5">Välj en historia i listan nedan, sätt på dig hörlurarna och promenera tillbaka i tiden!</h2>
       <div className="flex flex-row justify-center gap-2.5">
         <button 
           className={`bg-white text-green border-2 border-green 
           hover:bg-green hover:text-white hover:border-white
           focus:outline-none focus:ring-green
-          font-inder text-2xl rounded-lg p-5 w-32 h-20 
+          font-inder text-2xl rounded-lg w-[122px] h-[72px] 
           ${ time === 5 ? "bg-green text-white border-white" : ""
           } `}
           onClick={() => setTime(5)}> 5 min
@@ -45,7 +50,7 @@ export default function Time() {
           className={`bg-white text-green border-2 border-green 
           hover:bg-green hover:text-white hover:border-white
           focus:outline-none focus:ring-green
-          font-inder text-2xl rounded-lg p-5 w-32 h-20 
+          font-inder text-2xl rounded-lg  w-[122px] h-[72px] 
           ${ time === 10 ? "bg-green text-white border-white" : ""
           } `}
           onClick={() => setTime(10)}> 10 min
@@ -54,7 +59,7 @@ export default function Time() {
           className={`bg-white text-green border-2 border-green 
           hover:bg-green hover:text-white hover:border-white
           focus:outline-none focus:ring-green
-          font-inder text-2xl rounded-lg p-5 w-32 h-20 
+          font-inder text-2xl rounded-lg w-[122px] h-[72px] 
           ${ time === 15 ? "bg-green text-white border-white" : ""
           } `}
           onClick={() => setTime(15)}> 15 min
