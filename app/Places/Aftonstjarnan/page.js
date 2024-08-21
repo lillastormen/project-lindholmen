@@ -5,6 +5,7 @@ import CommentsSection from "@/components/CommentsSection";
 import { supabase } from "@/supabaseClient";
 
 export default function Aftonstjarnan() {
+  console.log(supabase.supabaseUrl);
   const placeInformation = {
     clipTitle: "",
     placeName: "Aftonstjärnan",
