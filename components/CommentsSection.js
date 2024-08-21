@@ -8,7 +8,7 @@ export default function CommentsSection({ tableName }) {
 
   useEffect(() => {
     fetchComments();
-  }, []);
+  }, [tableName]);
 
   const fetchComments = async () => {
     try {
