@@ -10,10 +10,5 @@ export default function Varvet2() {
     description: "Description comes here",
   };
 
-  return (
-    <>
-      <PlaceDetails {...placeInformation} />
-      <CommentsSection tableName="varvet2" />
-    </>
-  );
+  return <></>;
 }
