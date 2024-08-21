@@ -1,19 +1,20 @@
-import Image from "next/image";
-import Header from "@/components/Header";
+"use client";
+import React from "react";
 import PlaceDetails from "@/components/PlaceDetails";
+import CommentsSection from "@/components/CommentsSection"; // Adjust the import according to your project structure
 
 export default function Varvet() {
   const placeInformation = {
-    audioTitle: 'Anders på varvet',
-    audio: '/pirate.mp3',
-    time: "5 min",
-    placeName: 'Varvet',
-    imageUrl: '/images/aftis.jpg',
-    description: 'Description comes here',
- 
+    clipTitle: "",
+    placeName: "Varvet",
+    imageUrl: "/images/aftis.jpg",
+    description: "Description comes here",
   };
 
   return (
+    <>
       <PlaceDetails {...placeInformation} />
+      <CommentsSection tableName="varvet" />
+    </>
   );
 }

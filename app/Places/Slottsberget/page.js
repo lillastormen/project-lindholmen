@@ -3,10 +3,10 @@ import React from "react";
 import PlaceDetails from "@/components/PlaceDetails";
 import CommentsSection from "@/components/CommentsSection"; // Adjust the import according to your project structure
 
-export default function Telefonstolpen() {
+export default function Slottsberget() {
   const placeInformation = {
     clipTitle: "",
-    placeName: "Telefonstolpen",
+    placeName: "Slottsberget",
     imageUrl: "/images/aftis.jpg",
     description: "Description comes here",
   };
@@ -14,7 +14,7 @@ export default function Telefonstolpen() {
   return (
     <>
       <PlaceDetails {...placeInformation} />
-      <CommentsSection tableName="telefonstolpen" />
+      <CommentsSection tableName="slottsberget" />
     </>
   );
 }

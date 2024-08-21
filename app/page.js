@@ -29,7 +29,7 @@ export default function Home() {
     }
   }, []);
   return (
-    <main className="relative flex flex-col gap-44 h-screen justify-center items-center w-full mx-auto">
+    <main className="relative flex flex-col gap-56 h-screen justify-center items-center w-full mx-auto pt-8">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         src="/herovideo.mp4"
@@ -51,41 +51,25 @@ export default function Home() {
         Upptäck <br /> Lindholmen
       </h1>
 
-      <div className="flex flex-col gap-4 text-center text-black items-center">
-        <Link href="/timetable">
-          <button className="bg-orange-400/[0.8] rounded-[10px] py-4 w-[200px]">
-            <p className="text-sm">Hur lång tid har du?</p>
-          </button>
-        </Link>
-        <Link href="/map">
-          <button className="bg-orange-400/[0.8] rounded-[10px] py-4 w-[200px]">
-            <p className="text-sm">Vart vill du gå?</p>
-          </button>
-        </Link>
-        <p className="text-sm text-gray-300 ">
-          Ut och gå och låt din berättelse <br /> bli en del av Lindholmens
-          historia.
+      <div className="flex flex-col gap-4 p-4 text-center items-center text-white  rounded-[10px]">
+        <p className="text-sm w-[330px] ">
+          Ta en paus med vår promenadtimer eller utforska Lindholmen medan du
+          lyssnar på historier.
         </p>
-      </div>
+        <div className="flex gap-8">
+          <Link href="/timetable">
+            <button className="bg-orange-400/[0.9] rounded-[10px] py-4 w-[100px]">
+              <p className="text-xs">Hitta stories</p>
+            </button>
+          </Link>
 
-      {/* <div className="flex">
-        <div className="text-base text-white">
-          <Link
-            className={`link ${pathname === "/map" ? "active" : ""}`}
-            href="/map"
-          >
-            Map
+          <Link href="/map">
+            <button className="bg-orange-400/[0.9] rounded-[10px] py-4 w-[100px]">
+              <p className="text-xs">Utforska</p>
+            </button>
           </Link>
         </div>
-        <div className="text-base text-white">
-          <Link
-            className={`link ${pathname === "/timetable" ? "active" : ""}`}
-            href="/timetable"
-          >
-            Time
-          </Link>
-        </div>
-      </div> */}
+      </div>
     </main>
   );
 }

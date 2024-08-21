@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useRef, useState } from "react";
 
@@ -23,10 +23,9 @@ export default function PlayPauseBtn({ audio }) {
   return (
     <>
       <button onClick={togglePlayPause} className="">
-        {isPlaying ? <FaPause size={48} /> : <FaPlay size={48} />}
+        {isPlaying ? <FaPause size={38} /> : <FaPlay size={38} />}
       </button>
       <audio ref={audioRef} id="a1" src={audio}></audio>
     </>
   );
-
 }
