@@ -15,6 +15,9 @@ module.exports = {
       colors: {
         beige: "#FEF7F2",
       },
+      fontFamily: {
+        inder: ['Inder', 'sans-serif'],
+      }
     },
   },
   plugins: [],
