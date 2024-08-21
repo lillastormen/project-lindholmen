@@ -1,46 +1,67 @@
 'use client'
 
 import Image from "next/image";
-import React from "react";
+import BtnContainer from "@/components/BtnContainer";
+import PlayPauseBtn from "@/components/PlayPauseBtn";
 import { useState } from "react";
 
 export default function Time() {
 
-  const audioData = [
-    {src: "/pirate.mp3", title: "Audio 1", length: 5},
-    {src: "/pirate.mp3", title: "Audio 2", length: 10},
-    {src: "/pirate.mp3", title: "Audio 3", length: 15},
-    {src: "/pirate.mp3", title: "Audio 4", length: 10},
-    {src: "/pirate.mp3", title: "Audio 5", length: 5},
-    {src: "/pirate.mp3", title: "Audio 6", length: 5},
+  const [time, setTime] = useState(15)
+  
+  const audioFiles = [
+    {
+      title: 'Title 1',
+      time: 10,
+      file: "/pirate.mp3"
+
+    },
+    {
+      title: 'Title 2',
+      time: 15,
+      file: "/pirate.mp3"
+
+    },
+    {
+      title: 'Title 3',
+      time: 5,
+      file: "/pirate.mp3"
+
+    }
   ];
 
-  const [selectedTime, setSelectedTime] = useState(0);
-
-  const filteredAudio = audioData.filter((audio) => audio.length >= selectedTime);
-
-  const shuffleAudio = (audiArray) => {
-    return audio.Array.sort(() => Math.random() - 0.5);
-  };
-
+ 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Välj mellan 5, 10 och 15 min.</h1>
-      <div className="flex flex-col">
+  <>
+    
+      <h2 className="p-5">Välj mellan 5, 10 och 15 min.</h2>
+      <div className="flex flex-row justify-between">
         <button 
           className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          onClick={() => setSelectedTime(5)}> 5 
+          onClick={() => setTime(5)}> 5 
         </button>
         <button
           className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          onClick={() => setSelectedTime(10)}> 10 
+          onClick={() => setTime(10)}> 10 
         </button>
         <button
           className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          onClick={() => setSelectedTime(15)}> 15 
+          onClick={() => setTime(15)}> 15 
         </button>
       </div>
-    </main>
+      { 
+        audioFiles
+        .filter((file) => file.time <= time)
+        .map((file, index) => (
+        <BtnContainer 
+          key={index}
+          title={file.title} 
+          time={file.time} 
+          audio={file.file} />
+       ))
+      }
+  </>
+   
   );
 }
 
