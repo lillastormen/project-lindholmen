@@ -76,6 +76,9 @@ export default function Time() {
           audio={file.file} />
        ))
       }
+      <div className="fixed bottom-0 w-full bg-grey h-[71px] flex items-center pl-3">
+        <img src="icons/arrow-back-black.svg" alt="arrow-back"></img>
+      </div>
   </>
   );
 }

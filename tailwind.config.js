@@ -14,7 +14,8 @@ module.exports = {
       },
       colors: {
         beige: "#FEF7F2",
-        green: "#266041"
+        green: "#266041",
+        grey: "#D9D9D9"
       },
       fontFamily: {
         inder: ['Inder', 'sans-serif']
