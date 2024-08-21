@@ -1,5 +1,6 @@
+"use client";
 import React, { useState, useEffect } from "react";
-import { supabase } from "@/supabaseClient.js"; // Adjust the import according to your project structure
+import { supabase } from "@/supabaseClient";
 
 export default function CommentsSection({ tableName }) {
   const [comments, setComments] = useState([]);
@@ -8,7 +9,7 @@ export default function CommentsSection({ tableName }) {
 
   useEffect(() => {
     fetchComments();
-  }, []);
+  }, [tableName]);
 
   const fetchComments = async () => {
     try {
