@@ -1,11 +1,8 @@
-"use client";
 import React from "react";
 import PlaceDetails from "@/components/PlaceDetails";
 import CommentsSection from "@/components/CommentsSection";
-import { supabase } from "@/supabaseClient";
 
 export default function Aftonstjarnan() {
-  console.log(supabase.supabaseUrl);
   const placeInformation = {
     clipTitle: "",
     placeName: "Aftonstjärnan",
@@ -16,7 +13,7 @@ export default function Aftonstjarnan() {
   return (
     <>
       <PlaceDetails {...placeInformation} />
-      <CommentsSection tableName="aftonstjarnan" supaBase={supabase} />
+      <CommentsSection tableName="aftonstjarnan" />
     </>
   );
 }
