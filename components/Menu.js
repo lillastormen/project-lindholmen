@@ -11,8 +11,8 @@ export default function Menu() {
   return (
     <>
       <div
-        className={`flex items-center border-b-[1px] border-black ${
-          pathname === "/" ? "justify-between" : "justify-center"
+        className={`flex items-center ${
+          pathname === "/" ? "justify-between" : "justify-center border-b-[1px] border-black"
         } `}
       >
         <Link className={`link ${pathname === "/" ? "active" : ""}`} href="/">
