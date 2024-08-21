@@ -62,7 +62,7 @@ export default function CommentsSection({ tableName }) {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="w-full p-2 flex flex-col gap-2 bg-slate-100 h-[300px] overflow-scroll">
+      <div className="w-full p-2 flex flex-col gap-2 bg-slate-100 max-h-[300px] overflow-scroll">
         {loading ? (
           <p>Loading comments...</p>
         ) : comments.length > 0 ? (

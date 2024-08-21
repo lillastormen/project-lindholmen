@@ -11,7 +11,7 @@ export default function Menu() {
   return (
     <>
       <div
-        className={`flex md:justify-start items-center ${
+        className={`flex items-center ${
           pathname === "/" ? "justify-between" : "justify-center"
         } `}
       >
