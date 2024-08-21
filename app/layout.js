@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "/components/Header";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Stories @ Lindholmen",
@@ -11,10 +11,22 @@ export const metadata = {
     "Upptäck lindholmen, låt din berättelse bli en del av Lindholmens historia ",
 };
 
+// export default function MainLayout({ children }) {
+//   return (
+//     <html lang="en">
+//       <body className={`${inder.className} bg-white`}>
+//         <Header />
+//         <div>{children}</div>
+//        <Footer />
+//       </body>
+//     </html>
+//   );
+// }
+
 export default function MainLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-white`}>
+      <body className="bg-white">
         <Header />
         <div>{children}</div>
        <Footer />
