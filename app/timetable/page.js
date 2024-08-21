@@ -12,7 +12,7 @@ export default function Time() {
   const audioFiles = [
     {
       title: 'Title 1',
-      time: 10,
+      time: 10 ,
       file: "/pirate.mp3"
     },
     {
@@ -29,19 +29,31 @@ export default function Time() {
 
   return (
   <>
-      <h2 className="font-inder p-5">Välj mellan 5, 10 och 15 min.</h2>
-      <div className="flex flex-row justify-center gap-2">
+      <h2 className="font-inder text-xl p-5">Välj mellan 5, 10 och 15 min.</h2>
+      <div className="flex flex-row justify-center align-self gap-2.5">
         <button 
-          className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-14 py-5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          onClick={() => setTime(5)}> 5 
+          className="bg-white text-green border-2 border-green 
+          hover:bg-green hover:text-white hover:border-white
+          active:bg-green active:text-white active:border-white 
+          focus:outline-none focus:ring-green
+          font-inder text-2xl rounded-lg p-5"
+          onClick={() => setTime(5)}> 5 min
         </button>
         <button
-          className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-14 py-5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          onClick={() => setTime(10)}> 10 
+          className="bg-white text-green border-2 border-green 
+          hover:bg-green hover:text-white hover:border-white
+          active:bg-green active:text-white active:border-white 
+          focus:outline-none focus:ring-green
+          font-inder text-2xl rounded-lg p-5"
+          onClick={() => setTime(10)}> 10 min
         </button>
         <button
-          className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-14 py-5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          onClick={() => setTime(15)}> 15 
+          className="bg-white text-green border-2 border-green 
+          hover:bg-green hover:text-white hover:border-white
+          active:bg-green active:text-white active:border-white 
+          focus:outline-none focus:ring-green
+          font-inder text-2xl rounded-lg p-5"
+          onClick={() => setTime(15)}> 15 min
         </button>
       </div>
       { 
