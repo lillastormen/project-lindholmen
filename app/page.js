@@ -29,7 +29,7 @@ export default function Home() {
     }
   }, []);
   return (
-    <main className="relative flex flex-col gap-56 h-screen justify-center items-center w-full mx-auto pt-8">
+    <main className="relative flex flex-col gap-64 h-screen justify-center items-center w-full">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         src="/herovideo.mp4"
@@ -47,25 +47,25 @@ export default function Home() {
       >
         @capturedbyfelix
       </a>
-      <h1 className="text-4xl text-white font-bold p-4 rounded text-center mb-8">
+      <h1 className="text-4xl text-white font-bold rounded text-center">
         Upptäck <br /> Lindholmen
       </h1>
 
-      <div className="flex flex-col gap-4 p-4 text-center items-center text-white  rounded-[10px]">
-        <p className="text-sm w-[330px] ">
+      <div className="flex w-full flex-col gap-4 text-center items-center text-white rounded-[10px]">
+        <p className="text-xl w-[350px] ">
           Ta en paus med vår promenadtimer eller utforska Lindholmen medan du
           lyssnar på historier.
         </p>
         <div className="flex gap-8">
           <Link href="/timetable">
             <button className="bg-orange-400/[0.9] rounded-[10px] py-4 w-[100px]">
-              <p className="text-xs">Hitta stories</p>
+              <p className="text-sm">Hitta stories</p>
             </button>
           </Link>
 
           <Link href="/map">
             <button className="bg-orange-400/[0.9] rounded-[10px] py-4 w-[100px]">
-              <p className="text-xs">Utforska</p>
+              <p className="text-sm">Utforska</p>
             </button>
           </Link>
         </div>
