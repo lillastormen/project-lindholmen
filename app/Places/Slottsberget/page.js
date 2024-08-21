@@ -2,6 +2,7 @@
 import React from "react";
 import PlaceDetails from "@/components/PlaceDetails";
 import CommentsSection from "@/components/CommentsSection"; // Adjust the import according to your project structure
+import { supabase } from "@/supabaseClient";
 
 export default function Slottsberget() {
   const placeInformation = {
@@ -14,7 +15,7 @@ export default function Slottsberget() {
   return (
     <>
       <PlaceDetails {...placeInformation} />
-      <CommentsSection tableName="slottsberget" />
+      <CommentsSection tableName="slottsberget" supaBase={supabase} />
     </>
   );
 }

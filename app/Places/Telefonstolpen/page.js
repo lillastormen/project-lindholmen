@@ -2,6 +2,7 @@
 import React from "react";
 import PlaceDetails from "@/components/PlaceDetails";
 import CommentsSection from "@/components/CommentsSection"; // Adjust the import according to your project structure
+import { supabase } from "@/supabaseClient";
 
 export default function Telefonstolpen() {
   const placeInformation = {
@@ -14,7 +15,7 @@ export default function Telefonstolpen() {
   return (
     <>
       <PlaceDetails {...placeInformation} />
-      <CommentsSection tableName="telefonstolpen" />
+      <CommentsSection tableName="telefonstolpen" supaBase={supabase} />
     </>
   );
 }

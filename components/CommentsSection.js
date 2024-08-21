@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { supabase } from "@/supabaseClient.js"; // Adjust the import according to your project structure
 
-export default function CommentsSection({ tableName }) {
+export default function CommentsSection({ tableName, supaBase }) {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState({ username: "", comment: "" });
   const [loading, setLoading] = useState(true);
@@ -12,7 +11,7 @@ export default function CommentsSection({ tableName }) {
 
   const fetchComments = async () => {
     try {
-      const { data, error } = await supabase.from(tableName).select("*");
+      const { data, error } = await supaBase.from(tableName).select("*");
       if (error) {
         console.error("Error fetching comments:", error);
       } else {
@@ -33,7 +32,7 @@ export default function CommentsSection({ tableName }) {
 
     if (comment) {
       try {
-        const { data, error } = await supabase
+        const { data, error } = await supaBase
           .from(tableName)
           .insert([{ comment, username: finalUsername }]);
 

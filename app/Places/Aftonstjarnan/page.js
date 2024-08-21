@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import PlaceDetails from "@/components/PlaceDetails";
-import CommentsSection from "@/components/CommentsSection"; // Adjust the import according to your project structure
+import CommentsSection from "@/components/CommentsSection";
+import { supabase } from "@/supabaseClient";
 
 export default function Aftonstjarnan() {
   const placeInformation = {
@@ -14,7 +15,7 @@ export default function Aftonstjarnan() {
   return (
     <>
       <PlaceDetails {...placeInformation} />
-      <CommentsSection tableName="aftonstjarnan" />
+      <CommentsSection tableName="aftonstjarnan" supaBase={supabase} />
     </>
   );
 }
