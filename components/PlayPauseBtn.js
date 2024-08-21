@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa";
@@ -8,6 +8,10 @@ import { FaPause } from "react-icons/fa";
 export default function PlayPauseBtn({ audio }) {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+
+  // useEffect(() => {
+  //   audioRef.current = new Audio(audio);
+  // }, [audio]);
 
   function togglePlayPause() {
     if (audioRef.current) {
