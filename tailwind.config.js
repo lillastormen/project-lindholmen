@@ -14,14 +14,11 @@ module.exports = {
       },
       colors: {
         beige: "#FEF7F2",
-        green: "#266041",
+        green: "#266041"
       },
       fontFamily: {
-        inder: ['Inder', 'sans-serif'],
+        inder: ['Inder', 'sans-serif']
       },
-      letterSpacing: {
-        'custom':'-1px',
-      }
     },
   },
   plugins: [],
