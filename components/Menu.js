@@ -11,7 +11,7 @@ export default function Menu() {
   return (
     <>
       <div
-        className={`flex items-center ${
+        className={`flex items-center border-b-[1px] border-black ${
           pathname === "/" ? "justify-between" : "justify-center"
         } `}
       >
@@ -22,7 +22,7 @@ export default function Menu() {
             width={200}
             height={200}
             priority
-            style={{ width: "auto", height: "auto" }}
+            style={{ width: "auto", height: "auto", paddingTop: "20px" }}
           />
         </Link>
         {pathname === "/" && (
