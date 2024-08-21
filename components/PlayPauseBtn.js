@@ -26,8 +26,8 @@ export default function PlayPauseBtn({ audio }) {
 
   return (
     <>
-      <button onClick={togglePlayPause} className="">
-        {isPlaying ? <FaPause size={38} /> : <FaPlay size={38} />}
+      <button onClick={togglePlayPause} className="pr-[20px]">
+        {isPlaying ? <FaPause size={32} /> : <FaPlay size={32} />}
       </button>
       <audio ref={audioRef} id="a1" src={audio}></audio>
     </>

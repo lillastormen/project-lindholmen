@@ -5,53 +5,60 @@ import BtnContainer from "@/components/BtnContainer";
 import PlayPauseBtn from "@/components/PlayPauseBtn";
 import { useState } from "react";
 
+
 export default function Time() {
 
-  const [time, setTime] = useState(15)
+  const [time, setTime] = useState()
   
   const audioFiles = [
     {
       title: 'Title 1',
-      time: 10,
+      time: 10 ,
       file: "/pirate.mp3"
-
     },
     {
       title: 'Title 2',
       time: 15,
       file: "/pirate.mp3"
-
     },
     {
       title: 'Title 3',
       time: 5,
       file: "/pirate.mp3"
-
+    },
+     {
+      title: 'Title 4',
+      time: 15,
+      file: "/pirate.mp3"
     }
   ];
 
- 
   return (
   <>
-    
-      <h2 className="p-5">Välj mellan 5, 10 och 15 min.</h2>
-      <div className="flex flex-row justify-between">
+      <h2 className="font-inder text-xl text-center p-5">Välj en historia i listan nedan, sätt på dig hörlurarna och promenera tillbaka i tiden!</h2>
+      <div className="flex flex-row justify-center gap-2.5">
         <button 
-          className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          onClick={() => setTime(5)}> 5 
+          className={`font-inder text-2xl rounded-lg w-[122px] h-[72px] 
+          ${ time === 5 ? "bg-green text-white border-white" : "bg-white text-green border-2 border-green hover:bg-green hover:text-white hover:border-white focus:outline-none focus:ring-green"
+          } `}
+          onClick={() => setTime(5)}> 5 min
         </button>
         <button
-          className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          onClick={() => setTime(10)}> 10 
+          className={`font-inder text-2xl rounded-lg  w-[122px] h-[72px] 
+          ${ time === 10 ? "bg-green text-white border-white" : "bg-white text-green border-2 border-green hover:bg-green hover:text-white hover:border-white focus:outline-none focus:ring-green"
+          } `}
+          onClick={() => setTime(10)}> 10 min
         </button>
         <button
-          className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          onClick={() => setTime(15)}> 15 
+          className={`font-inder text-2xl rounded-lg w-[122px] h-[72px] 
+          ${ time === 15 ? "bg-green text-white border-white" : "bg-white text-green border-2 border-green hover:bg-green hover:text-white hover:border-white focus:outline-none focus:ring-green"
+          } `}
+          onClick={() => setTime(15)}> 15 min
         </button>
       </div>
       { 
         audioFiles
-        .filter((file) => file.time <= time)
+        .filter((file) => (file.time == time || !time) )
         .map((file, index) => (
         <BtnContainer 
           key={index}
@@ -61,7 +68,6 @@ export default function Time() {
        ))
       }
   </>
-   
   );
 }
 
