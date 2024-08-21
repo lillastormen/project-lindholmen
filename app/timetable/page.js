@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export default function Time() {
 
-  const [time, setTime] = useState(15)
+  const [time, setTime] = useState()
   
   const audioFiles = [
     {
@@ -62,7 +62,7 @@ export default function Time() {
       </div>
       { 
         audioFiles
-        .filter((file) => file.time == time)
+        .filter((file) => (file.time == time || !time) )
         .map((file, index) => (
         <BtnContainer 
           key={index}
