@@ -29,7 +29,7 @@ export default function Home() {
     }
   }, []);
   return (
-    <main className="relative flex flex-col gap-64 h-screen justify-center items-center w-full">
+    <main className="relative flex flex-col gap-56 h-screen justify-center items-center w-full">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         src="/herovideo.mp4"
@@ -52,7 +52,7 @@ export default function Home() {
       </h1>
 
       <div className="flex w-full flex-col gap-4 text-center items-center text-white rounded-[10px]">
-        <p className="text-xl w-[350px] ">
+        <p className=" w-[350px] ">
           Ta en paus med vår promenadtimer eller utforska Lindholmen medan du
           lyssnar på historier.
         </p>
