@@ -51,8 +51,8 @@ export default function Home() {
         Upptäck <br /> Lindholmen
       </h1>
 
-      <div className="flex w-full flex-col gap-4 text-center items-center text-white rounded-[10px]">
-        <p className=" w-[350px] ">
+      <div className="flex flex-col gap-4 justify-center text-center items-center text-white">
+        <p className=" max-w-[310px] ">
           Ta en paus med vår promenadtimer eller utforska Lindholmen medan du
           lyssnar på historier.
         </p>
