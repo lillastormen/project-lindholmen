@@ -29,7 +29,7 @@ export default function Home() {
     }
   }, []);
   return (
-    <main className="relative flex flex-col h-screen justify-center items-center w-full mx-auto">
+    <main className="relative flex flex-col gap-44 h-screen justify-center items-center w-full mx-auto">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         src="/herovideo.mp4"
@@ -40,7 +40,7 @@ export default function Home() {
         loop
       ></video>
       <a
-        className="absolute left-2 bottom-2 text-white/[0.2]"
+        className="absolute left-2 bottom-2 text-white/[0.2] text-[11px]"
         href="https://www.instagram.com/capturedbyfelix"
         target="_blank"
         rel="noopener noreferrer"
@@ -52,19 +52,20 @@ export default function Home() {
       </h1>
 
       <div className="flex flex-col gap-4 text-center text-black items-center">
-        <div className="bg-white/[0.5] rounded-[10px] p-4 mb-12 w-[350px]">
-          <p className="text-lg ">
-            Ut och gå och låt din berättelse bli en del av Lindholmens historia.
-          </p>
-        </div>
-        <div className="bg-orange-400/[0.8] rounded-[10px] p-4 w-[200px]">
-          <p className="">Hur lång tid har du?</p>
-          <p className="text-xs">Välj mellan 5, 10 och 15 min.</p>
-        </div>
-        <div className="bg-orange-400/[0.8] rounded-[10px] p-4 w-[200px]">
-          <p className="">Vart vill du gå?</p>
-          <p className="text-xs">Välj din destination.</p>
-        </div>
+        <Link href="/timetable">
+          <button className="bg-orange-400/[0.8] rounded-[10px] py-4 w-[200px]">
+            <p className="text-sm">Hur lång tid har du?</p>
+          </button>
+        </Link>
+        <Link href="/map">
+          <button className="bg-orange-400/[0.8] rounded-[10px] py-4 w-[200px]">
+            <p className="text-sm">Vart vill du gå?</p>
+          </button>
+        </Link>
+        <p className="text-sm text-gray-300 ">
+          Ut och gå och låt din berättelse <br /> bli en del av Lindholmens
+          historia.
+        </p>
       </div>
 
       {/* <div className="flex">
