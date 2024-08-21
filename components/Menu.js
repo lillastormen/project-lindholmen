@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { RxQuestionMarkCircled } from "react-icons/rx";
 import { usePathname } from "next/navigation";
 
 export default function Menu() {
@@ -9,10 +10,14 @@ export default function Menu() {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div
+        className={`flex md:justify-start items-center ${
+          pathname === "/" ? "justify-between" : "justify-center"
+        } `}
+      >
         <Link className={`link ${pathname === "/" ? "active" : ""}`} href="/">
           <Image
-            src="/Logo.png"
+            src={pathname === "/" ? "/logo-white.png" : "/logo-black.png"}
             alt="Logo"
             width={200}
             height={200}
@@ -20,6 +25,11 @@ export default function Menu() {
             style={{ width: "auto", height: "auto" }}
           />
         </Link>
+        {pathname === "/" && (
+          <Link href="/info">
+            <RxQuestionMarkCircled color="white" size="24px" />
+          </Link>
+        )}
       </div>
     </>
   );
