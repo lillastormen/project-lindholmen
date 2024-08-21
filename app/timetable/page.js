@@ -5,6 +5,7 @@ import BtnContainer from "@/components/BtnContainer";
 import PlayPauseBtn from "@/components/PlayPauseBtn";
 import { useState } from "react";
 
+
 export default function Time() {
 
   const [time, setTime] = useState(15)
@@ -29,14 +30,14 @@ export default function Time() {
 
   return (
   <>
-      <h2 className="font-inder text-xl p-5">Välj mellan 5, 10 och 15 min.</h2>
-      <div className="flex flex-row justify-center align-self gap-2.5">
+      <h2 className="font-inder text-xl p-5">Välj en historia i listan nedan, sätt på dig hörlurarna och promenera tillbaka i tiden!</h2>
+      <div className="flex flex-row justify-center gap-2.5">
         <button 
           className="bg-white text-green border-2 border-green 
           hover:bg-green hover:text-white hover:border-white
           active:bg-green active:text-white active:border-white 
           focus:outline-none focus:ring-green
-          font-inder text-2xl rounded-lg p-5"
+          font-inder text-2xl rounded-lg p-5 w-32 h-20"
           onClick={() => setTime(5)}> 5 min
         </button>
         <button
@@ -44,7 +45,7 @@ export default function Time() {
           hover:bg-green hover:text-white hover:border-white
           active:bg-green active:text-white active:border-white 
           focus:outline-none focus:ring-green
-          font-inder text-2xl rounded-lg p-5"
+          font-inder text-2xl rounded-lg p-5 w-32 h-20"
           onClick={() => setTime(10)}> 10 min
         </button>
         <button
@@ -52,7 +53,7 @@ export default function Time() {
           hover:bg-green hover:text-white hover:border-white
           active:bg-green active:text-white active:border-white 
           focus:outline-none focus:ring-green
-          font-inder text-2xl rounded-lg p-5"
+          font-inder text-2xl rounded-lg p-5 w-32 h-20"
           onClick={() => setTime(15)}> 15 min
         </button>
       </div>

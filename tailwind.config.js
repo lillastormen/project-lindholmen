@@ -18,6 +18,9 @@ module.exports = {
       },
       fontFamily: {
         inder: ['Inder', 'sans-serif'],
+      },
+      letterSpacing: {
+        'custom':'-1px',
       }
     },
   },
