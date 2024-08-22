@@ -4,8 +4,9 @@ import CommentsSection from "@/components/CommentsSection"; // Adjust the import
 
 export default function Slottsberget() {
   const placeInformation = {
-    clipTitle: "",
     placeName: "Slottsberget",
+    audioTitle: "Slottsberget",
+    audioTime: "10min",
     audio: "/slottsberget.mp3",
     imageUrl: "/images/aftis.jpg",
     teaser:

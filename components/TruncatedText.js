@@ -10,9 +10,21 @@ const TruncatedText = ({ text, maxLength }) => {
   const truncatedText =
     text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
 
+  const convertNewlinesToBreaks = (text) => {
+    return text.split("\n").map((str, index) => (
+      <React.Fragment key={index}>
+        {str}
+        <br />
+      </React.Fragment>
+    ));
+  };
   return (
     <div>
-      <p>{isExpanded ? text : truncatedText}</p>
+      <p>
+        {isExpanded
+          ? convertNewlinesToBreaks(text)
+          : convertNewlinesToBreaks(truncatedText)}
+      </p>
       {text.length > maxLength && (
         <button
           onClick={toggleExpansion}
