@@ -6,7 +6,7 @@ import BtnContainer from "@/components/BtnContainer";
 export default function Aftonstjarnan() {
   const placeInformation = {
     placeName: "Aftonstjärnan",
-    audio: "/audio/aftonstjärnan.mp3",
+    audio: "/audio/aftonstjarnan.mp3",
     time: 5,
     audioTitle: "Karamellfabrikens Stjärna",
     imageUrl: "/images/aftonstjarnan_karta.png",

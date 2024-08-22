@@ -1,11 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { supabase } from "@/supabaseClient";
+import { FaRegThumbsUp } from "react-icons/fa6";
 
 export default function CommentsSection({ tableName, story }) {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState({ username: "", comment: "" });
   const [loading, setLoading] = useState(true);
+  const [animatingCommentId, setAnimatingCommentId] = useState(null);
 
   useEffect(() => {
     fetchComments();
@@ -61,29 +63,67 @@ export default function CommentsSection({ tableName, story }) {
     setNewComment((prev) => ({ ...prev, [name]: value }));
   };
 
+  const handleLike = async (commentId, currentLikes) => {
+    setAnimatingCommentId(commentId);
+    const { data, error } = await supabase
+      .from(tableName)
+      .update({ likes: currentLikes + 1 })
+      .eq("id", commentId);
+
+    if (error) {
+      console.error("Error updating likes:", error);
+    } else {
+      fetchComments();
+      // Optionally, you can refetch comments or update the state to reflect the new likes count
+    }
+    setTimeout(() => setAnimatingCommentId(null), 500);
+  };
+
   return (
     <div className="flex flex-col justify-center items-center px-5 my-4 gap-2">
       <h3 className="text-black text-lg">{story}</h3>
       <div className="w-full flex flex-col gap-2  max-h-[300px] overflow-scroll mb-4">
         {loading ? (
-          <p>Laddar stories...</p>
+          <p>Laddar kommentarer...</p>
         ) : comments.length > 0 ? (
           comments.map((comment) => {
             if (!comment) return null; // Skip null or undefined comments
 
-            const { username = "Anonym", comment: commentText } = comment;
+            const {
+              id,
+              username = "Anonym",
+              comment: commentText,
+              likes = 0,
+            } = comment;
 
             return (
               <div className="bg-[#ffdcba] rounded-[10px] p-2" key={comment.id}>
-                <p>
-                  <strong className="underline">{username}</strong>
-                </p>
+                <div className="flex justify-between pb-2">
+                  <p>
+                    <strong className="underline text-lg">{username}</strong>
+                  </p>
+                  <div className="flex ">
+                    <span className="flex items-end">{likes}</span>
+                    <button
+                      className="ml-2 flex items-center"
+                      onClick={() => handleLike(id, likes)}
+                      disabled={loading}
+                    >
+                      <FaRegThumbsUp
+                        size="24px"
+                        className={`${
+                          animatingCommentId === id ? "animate-bounce" : ""
+                        }`}
+                      />
+                    </button>
+                  </div>
+                </div>
                 <p>{commentText}</p>
               </div>
             );
           })
         ) : (
-          <p>No comments yet.</p>
+          <p>Inga kommentarer än.</p>
         )}
       </div>
 
