@@ -11,6 +11,7 @@ export default function Karlatornet() {
     time: "10 min",
     audioTitle: "Britta på Karlatornet",
     imageUrl: "/images/karlatornet_karta.png",
+    vintageUrl: "/images/karlatornet.jpeg",
     mapLink:
       "https://www.google.se/maps/place/Karlatornet,+Lindholmen,+G%C3%B6teborg/@57.7097811,11.9365483,17z/data=!3m1!4b1!4m6!3m5!1s0x464ff3509b4449a7:0xa38302d0298a445!8m2!3d57.7097783!4d11.9391232!16s%2Fg%2F1q5jyf2fb?entry=ttu",
     teaser: "Historien upprepar sig själv, så även på Lindholmen.",

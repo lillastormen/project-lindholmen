@@ -7,6 +7,7 @@ export default function Varvet() {
     clipTitle: "",
     placeName: "Varvet",
     imageUrl: "/images/varvet_karta.png",
+    vintageUrl: "/images/femoringen.jpeg",
     mapLink:
       "https://www.google.se/maps/@57.7051065,11.9424867,16.38z?entry=ttu",
     teaser:

@@ -7,6 +7,7 @@ import TruncatedText from "@/components/TruncatedText";
 const PlaceDetails = ({
   placeName,
   imageUrl,
+  vintageUrl,
   description,
   audio,
   time,
@@ -31,10 +32,20 @@ const PlaceDetails = ({
           <p className="text-white text-center">{teaser}</p>
         </div>
       </div>
-      <a className="text-black text-xs pb-2 w-full underline" href={mapLink}>
+      <a className="text-black text-sm pb-2 w-full underline" href={mapLink}>
         Google Maps
       </a>
       <TruncatedText text={description} maxLength={303} />
+      <div className="w-full h-64 relative mb-2 flex justify-center items-center">
+        <Image
+          src={vintageUrl}
+          alt={placeName}
+          fill
+          objectfit="cover"
+          priority
+          className="rounded-[10px]"
+        />
+      </div>
     </div>
   );
 };
