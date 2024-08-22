@@ -2,12 +2,11 @@
 
   import BtnContainer from "@/components/BtnContainer";
   import { useState } from "react";
-  import TestBtnComponenet from "@/components/TestBtnComponent";
   import TimeButton from "@/components/TimeButton";
 
   export default function Time() {
     const [time, setTime] = useState();
-    const [isPlaying, setIsPlaying] = useState(false);
+  
 
     const audioFiles = [
       {
@@ -46,9 +45,8 @@
       const times = [5, 10, 15];
       const randomTime = times[Math.floor(Math.random() * times.length)];
       setTime(randomTime);
-      setIsPlaying(!isPlaying);
+     
     };
-
 
     return (
       <>
@@ -72,7 +70,6 @@
             time={15}
             selectedTime={time}
             />
-    
           </div>
           {audioFiles
             .filter((file) => file.time == time || !time)
@@ -85,24 +82,15 @@
               />
             ))}
 
-          <div className="flex flex-col justify-between items-center">
-
-          <TestBtnComponenet 
-          audio="/pirate.mp3" play={isPlaying}/>
-            <TestBtnComponenet 
-          audio="/pirate.mp3"/>
-            <button
-              onClick={randomAudio}
-            >
+          <div className="flex flex-col justify-between items-center absolute bottom-10 left-1/2 transform -translate-x-1/2">
+            <button onClick={randomAudio}>
               <div className="flex flex-col justify-between items-center pt-5">
                 <img src="/icons/shuffle.svg" className="size-10" />
                 Välj åt mig 
               </div>
             </button>
-
-        
-            
           </div>
+        
         </div>
       </>
     );
