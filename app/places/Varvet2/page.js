@@ -7,7 +7,8 @@ export default function Varvet2() {
     clipTitle: "",
     placeName: "Lammkotletten",
     audio: "/lamkotletten.mp3",
-    imageUrl: "/images/aftis.jpg",
+    imageUrl: "/images/varvet2_karta.png",
+    mapLink: "https://www.google.se/maps/@57.7056373,11.9411532,16z?entry=ttu",
     teaser:
       "Många var historierna om arbetarna på varvet, här har vi den om lammkotletten, läkaren och det förrädiska emaljögat. ",
     description:
