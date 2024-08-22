@@ -11,25 +11,12 @@ export const metadata = {
     "Upptäck lindholmen, låt din berättelse bli en del av Lindholmens historia ",
 };
 
-// export default function MainLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       <body className={`${inder.className} bg-white`}>
-//         <Header />
-//         <div>{children}</div>
-//        <Footer />
-//       </body>
-//     </html>
-//   );
-// }
-
 export default function MainLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-white">
         <Header />
         <div>{children}</div>
-       <Footer />
       </body>
     </html>
   );

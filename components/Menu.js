@@ -11,18 +11,20 @@ export default function Menu() {
   return (
     <>
       <div
-        className={`flex items-center ${
-          pathname === "/" ? "justify-between" : "justify-center border-b-[1px] border-black"
+        className={`flex items-center w-full ${
+          pathname === "/"
+            ? "justify-between"
+            : "justify-center items-center border-b-[1px] border-black "
         } `}
       >
-        <Link className={`link ${pathname === "/" ? "active" : ""}`} href="/">
+        <Link className={` ${pathname === "/" ? "active" : ""}`} href="/">
           <Image
             src={pathname === "/" ? "/logo-white.png" : "/logo-black.png"}
             alt="Logo"
             width={200}
             height={200}
             priority
-            style={{ width: "auto", height: "auto", paddingTop: "20px" }}
+            style={{ width: "auto", height: "auto" }}
           />
         </Link>
         {pathname === "/" && (
