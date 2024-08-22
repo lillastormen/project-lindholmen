@@ -7,13 +7,14 @@ export default function Varvet() {
     clipTitle: "",
     placeName: "Varvet",
     imageUrl: "/images/aftis.jpg",
-    description: "Description comes here",
+    teaser: "",
+    description: "",
   };
 
   return (
     <>
       <PlaceDetails {...placeInformation} />
-      <CommentsSection tableName="varvet" />
+      <CommentsSection tableName="varvet" story="" />
     </>
   );
 }
