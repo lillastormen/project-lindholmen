@@ -51,11 +51,12 @@
 
     return (
       <>
-        <div className="pt-20">
+      <div className="bg-[url('/images/karta-background.png')] bg-contain fixed top-0 w-full h-full -z-10 opacity-50"></div>
+      
           <h2 className="text-xl text-center pt-3.5 pb-5 mx-3">
             Välj en historia i listan nedan, sätt på dig hörlurarna och promenera tillbaka i tiden!
           </h2>
-          <div className="flex flex-row justify-center gap-3">
+          <div className="flex flex-row justify-center px-6 gap-3">
             <TimeButton 
               setTime={() => setTime(5)}
               time={5}
@@ -91,8 +92,7 @@
               </div>
             </button>
           </div>
-        
-        </div>
+
       </>
     );
   }
