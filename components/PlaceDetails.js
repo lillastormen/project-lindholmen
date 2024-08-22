@@ -15,7 +15,7 @@ const PlaceDetails = ({
   mapLink,
 }) => {
   return (
-    <div className="flex flex-col items-center p-5">
+    <div className="flex flex-col items-center px-5 pt-24">
       <BtnContainer audio={audio} time={time} title={audioTitle} />
       <div className="w-full h-64 relative mb-2 flex justify-center items-center">
         <Image
@@ -35,7 +35,7 @@ const PlaceDetails = ({
         Google Maps
       </a>
       <TruncatedText text={description} maxLength={303} />
-      <div className="w-full h-72 relative mb-2 flex justify-center items-center">
+      <div className="w-full h-72 relative mb-2 mt-2 flex justify-center items-center">
         <Image
           src={vintageUrl}
           alt={placeName}

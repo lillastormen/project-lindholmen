@@ -103,15 +103,15 @@ export default function CommentsSection({ tableName, story }) {
                     <strong className="underline text-lg">{username}</strong>
                   </p>
                   <div className="flex ">
-                    <span>{likes}</span>
+                    <span className="flex items-end">{likes}</span>
                     <button
-                      className="ml-2"
+                      className="ml-2 flex items-center"
                       onClick={() => handleLike(id, likes)}
                       disabled={loading}
                     >
                       <FaRegThumbsUp
-                        size="22px"
-                        className={`mr-2 ${
+                        size="24px"
+                        className={`${
                           animatingCommentId === id ? "animate-bounce" : ""
                         }`}
                       />
