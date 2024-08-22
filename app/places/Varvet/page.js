@@ -4,11 +4,11 @@ import CommentsSection from "@/components/CommentsSection"; // Adjust the import
 
 export default function Varvet() {
   const placeInformation = {
-    audioTitle: "Varvet",
+    audioTitle: "Femöringen",
     placeName: "Varvet",
     imageUrl: "/images/varvet_karta.png",
     time: "15 min",
-    audioTitle:"/audio/femoringen.mp3",
+    audio:"/audio/femoringen.mp3",
     vintageUrl: "/images/femoringen.jpeg",
     mapLink:
       "https://www.google.se/maps/@57.7051065,11.9424867,16.38z?entry=ttu",

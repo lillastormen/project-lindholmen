@@ -4,7 +4,7 @@ import CommentsSection from "@/components/CommentsSection"; // Adjust the import
 
 export default function Telefonstolpen() {
   const placeInformation = {
-    audioTitle:"Telefonstolpen",
+    audioTitle:"Innovation",
     placeName: "Telefonstolpen",
     imageUrl: "/images/telefonstolpen_karta.png",
     time: "10 min",

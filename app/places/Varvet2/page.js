@@ -4,8 +4,8 @@ import CommentsSection from "@/components/CommentsSection"; // Adjust the import
 
 export default function Varvet2() {
   const placeInformation = {
-    clipTitle: "Varvet 2",
-    placeName: "Lammkotletten",
+    placeName: "Varvet 2",
+    audioTitle: "Historien om Lammkotletten",
     time: "5 min",
     audio: "/audio/lamkotletten.mp3",
     imageUrl: "/images/varvet2_karta.png",

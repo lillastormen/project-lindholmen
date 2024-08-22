@@ -8,7 +8,7 @@ export default function Karlatornet() {
     placeName: "Karlatornet",
     audio: "/audio/karlatornet.mp3",
     time: "10 min",
-    audioTitle: "Britta på Karlatornet",
+    audioTitle: "245 meter över havet",
     imageUrl: "/images/karlatornet_karta.png",
     vintageUrl: "/images/karlatornet.jpeg",
     mapLink:
