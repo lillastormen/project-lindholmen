@@ -7,7 +7,7 @@ export default function Varvet() {
     audioTitle: "Femöringen",
     placeName: "Varvet",
     imageUrl: "/images/varvet_karta.png",
-    time: "15 min",
+    time: 15,
     audio:"/audio/femoringen.mp3",
     vintageUrl: "/images/femoringen.jpeg",
     mapLink:

@@ -7,7 +7,7 @@ export default function Karlatornet() {
   const placeInformation = {
     placeName: "Karlatornet",
     audio: "/audio/karlatornet.mp3",
-    time: "10 min",
+    time: 10,
     audioTitle: "245 meter över havet",
     imageUrl: "/images/karlatornet_karta.png",
     vintageUrl: "/images/karlatornet.jpeg",
