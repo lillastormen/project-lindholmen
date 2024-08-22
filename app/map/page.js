@@ -1,7 +1,3 @@
-import Image from "next/image";
-
-import Link from "next/link";
-import PlaceDetails from "@/components/PlaceDetails";
 import PlaceCardContainer from "@/components/PlaceCardContainer";
 
 export default function Map() {
@@ -50,10 +46,6 @@ export default function Map() {
         imageUrl="/images/varvet_2.png" 
         url="/places/Varvet2"
       />
-      
-        
-    
-
       </div>
     </div>
   );
