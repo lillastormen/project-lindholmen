@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import PlayPauseBtn from "./PlayPauseBtn";
 import BtnContainer from "./BtnContainer";
 import TruncatedText from "@/components/TruncatedText";
 
