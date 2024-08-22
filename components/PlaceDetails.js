@@ -35,12 +35,12 @@ const PlaceDetails = ({
         Google Maps
       </a>
       <TruncatedText text={description} maxLength={303} />
-      <div className="w-full h-64 relative mb-2 flex justify-center items-center">
+      <div className="w-full h-72 relative mb-2 flex justify-center items-center">
         <Image
           src={vintageUrl}
           alt={placeName}
           fill
-          objectfit="cover"
+          objectfit="fit"
           priority
           className="rounded-[10px]"
         />

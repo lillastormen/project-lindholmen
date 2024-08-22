@@ -52,14 +52,15 @@ export default function Home() {
       </h1>
 
       <div className="flex flex-col gap-4 justify-center text-center items-center text-white">
-        <p className=" max-w-[310px] ">
-          Ta en paus med vår promenadtimer eller utforska Lindholmen medan du
-          lyssnar på historier.
+        <p className=" max-w-[340px]">
+          Låt historierna sätta tiden på din promenad eller utforska platser på
+          Lindholmen medan du lyssnar på dess historier. <br />
+          <span className="font-semibold">Vad vill du göra?</span>
         </p>
         <div className="flex gap-8">
           <Link href="/timetable">
             <button className="bg-orange-400/[0.9] rounded-[10px] py-4 w-[100px]">
-              <p className="text-sm">Hitta stories</p>
+              <p className="text-sm">Håll tiden</p>
             </button>
           </Link>
 
