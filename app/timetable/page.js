@@ -33,7 +33,7 @@ export default function Time() {
 
   return (
     <>
-      <div className="pt-24">
+      <div className="pt-20">
         <h2 className="text-xl text-center p-5">
           Välj en historia i listan nedan, sätt på dig hörlurarna och promenera
           tillbaka i tiden!
