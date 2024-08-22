@@ -15,7 +15,7 @@ export default function Time() {
       file: "/pirate.mp3",
     },
     {
-      title: "Title 2",
+      title: "Brittas uppsägning",
       time: 15,
       file: "/pirate.mp3",
     },
