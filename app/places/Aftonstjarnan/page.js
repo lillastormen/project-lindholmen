@@ -7,7 +7,7 @@ export default function Aftonstjarnan() {
   const placeInformation = {
     placeName: "Aftonstjärnan",
     audio: "/audio/aftonstjärnan.mp3",
-    time: "5 min",
+    time: 5,
     audioTitle: "Karamellfabrikens Stjärna",
     imageUrl: "/images/aftonstjarnan_karta.png",
     vintageUrl: "/images/aftis.jpg",

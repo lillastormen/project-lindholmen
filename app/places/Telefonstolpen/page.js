@@ -7,7 +7,7 @@ export default function Telefonstolpen() {
     audioTitle:"Innovation",
     placeName: "Telefonstolpen",
     imageUrl: "/images/telefonstolpen_karta.png",
-    time: "10 min",
+    time: 10,
     audio:"/audio/telefonstolpen.mp3",
     vintageUrl: "/images/telefonstolpen.jpeg",
     mapLink:

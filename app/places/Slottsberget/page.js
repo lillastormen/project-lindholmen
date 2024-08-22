@@ -6,7 +6,7 @@ export default function Slottsberget() {
   const placeInformation = {
     placeName: "Slottsberget",
     audioTitle: "Blev Blanca imponerad?",
-    time: "10min",
+    time: 10,
     audio: "/audio/slottsberget.mp3",
     imageUrl: "/images/karta_slottsberget.png",
     vintageUrl: "/images/slottsberget.jpg",
