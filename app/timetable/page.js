@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import BtnContainer from "@/components/BtnContainer";
-import PlayPauseBtn from "@/components/PlayPauseBtn";
 import { useState } from "react";
 
 export default function Time() {
