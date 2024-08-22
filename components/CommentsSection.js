@@ -93,7 +93,7 @@ export default function CommentsSection({ tableName }) {
             name="username"
             value={newComment.username}
             onChange={handleChange}
-            placeholder="Your name"
+            placeholder="Anonym"
             className="w-full p-2 mb-2 border rounded"
             autoComplete="off"
           />
