@@ -13,7 +13,7 @@ export default function Map() {
    
       <div className="flex flex-col justify-center gap-2.5">
       <div className="bg-beige flex flex-row justify-between items-center w-[370px] h-[76px] my-5 mx-auto border-0 rounded-lg">
-        <Link href="/places/Aftonstjarnan">Aftonstjärnan</Link>
+      <h3 className="font-inder text-xl pl-[12px]"><Link href="/places/Aftonstjarnan">Aftonstjärnan</Link></h3>
       </div>
         <Link href="/places/Slottsberget">Slottsberget</Link>
         <Link href="/places/Telefonstolpen">Telefonstolpen</Link>
