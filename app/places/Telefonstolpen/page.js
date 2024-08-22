@@ -6,7 +6,10 @@ export default function Telefonstolpen() {
   const placeInformation = {
     clipTitle: "",
     placeName: "Telefonstolpen",
-    imageUrl: "/images/aftis.jpg",
+    imageUrl: "/images/telefonstolpen_karta.png",
+    vintageUrl: "/images/telefonstolpen.jpeg",
+    mapLink:
+      "https://www.google.se/maps/place/Slottsberget/@57.704766,11.9276993,16.88z/data=!4m10!1m2!2m1!1sslottsberget!3m6!1s0x464ff30666120eef:0xf84ff4ad8495c61f!8m2!3d57.703813!4d11.9291447!15sCgxzbG90dHNiZXJnZXSSARNoaXN0b3JpY2FsX2xhbmRtYXJr4AEA!16s%2Fg%2F11g2368zr4?entry=ttu",
     teaser:
       "Vad är det som går att skymta uppe på Slottsberget? Ta en promenad tillbaka i tiden och spana in Göteborgs sista.. ja vadå?",
     description:
