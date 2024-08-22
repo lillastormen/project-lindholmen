@@ -11,34 +11,29 @@
 
     const audioFiles = [
       {
-        label: 1,
-        title: "Title 1",
+        title: "Karamellfabrikens Stjärna",
+        time: 5,
+        file: "/audio/aftonstjärna.mp3",
+      },
+      {
+        title: "Blew Blanca imponerad?",
         time: 10,
-        file: "/pirate.mp3",
+        file: "/audio/slottsberget.mp3",
+      },
+      { 
+        title: "Innovation",
+        time: 10,
+        file: "/audio/telefonstolpen.mp3",
       },
       {
-        label: 2,
-        title: "Brittas uppsägning",
+        title: "Femöringen",
         time: 15,
-        file: "/pirate.mp3",
+        file: "/audio/femoringen.mp3",
       },
       {
-        label: 3, 
-        title: "Title 3",
-        time: 5,
-        file: "/pirate.mp3",
-      },
-      {
-        label: 4,
-        title: "Title 4",
-        time: 15,
-        file: "/pirate.mp3",
-      },
-      {
-        label: 5,
-        title: "Title 5",
-        time: 5,
-        file: "/pirate.mp3",
+        title: "245 meter över havet",
+        time: 10,
+        file: "/audio/karlatornet.mp3",
       },
     ];
 
