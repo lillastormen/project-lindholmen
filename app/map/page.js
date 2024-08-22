@@ -1,26 +1,60 @@
 import Image from "next/image";
 
 import Link from "next/link";
+import PlaceDetails from "@/components/PlaceDetails";
+import PlaceCardContainer from "@/components/PlaceCardContainer";
 
 export default function Map() {
   return (
 
     <div className="pt-20">
         <h2 className="text-xl text-center p-5">
-          Välj en historia i listan nedan, sätt på dig hörlurarna och promenera
-          tillbaka i tiden!
+        Vart vill du gå? Välj en destination för din promenad, och få ljudklipp relaterade till omgivningen.
         </h2>
    
       <div className="flex flex-col justify-center gap-2.5">
-      <div className="bg-beige flex flex-row justify-between items-center w-[370px] h-[76px] my-5 mx-auto border-0 rounded-lg">
-      <h3 className="font-inder text-xl pl-[12px]"><Link href="/places/Aftonstjarnan">Aftonstjärnan</Link></h3>
+  
+      <PlaceCardContainer 
+        title="Aftonstjärnan"
+        time="20 min"
+        imageUrl="/images/aftonstjarnan.png"
+        url="/places/Aftonstjarnan"
+      />
+      <PlaceCardContainer 
+        title="Slottsberget"
+        time="30 min"
+        imageUrl="/images/slottsberget.png" 
+        url="/places/Slottsberget"
+      />
+      <PlaceCardContainer 
+        title="Telefonstolpen"
+        time="15 min"
+        imageUrl="/images/telefonstolpe.png" 
+        url="/places/Telefonstolpen"
+      />
+      <PlaceCardContainer 
+        title="Varvet"
+        time="15 min"
+        imageUrl="/images/varvet_1.png" 
+        url="/places/Varvet"
+      />
+      <PlaceCardContainer 
+        title="Karlatornet"
+        time="15 min"
+        imageUrl="/images/karlatornet.png" 
+        url="/places/Karlatornet"
+      />
+      <PlaceCardContainer 
+        title="Varvet2"
+        time="15 min"
+        imageUrl="/images/varvet_2.png" 
+        url="/places/Varvet2"
+      />
+      
+        
+    
+
       </div>
-        <Link href="/places/Slottsberget">Slottsberget</Link>
-        <Link href="/places/Telefonstolpen">Telefonstolpen</Link>
-        <Link href="/places/Karlatornet">Karlatornet</Link>
-        <Link href="/places/Varvet">Varvet</Link>
-        <Link href="/places/Varvet2">Varvet2</Link>
-      </div>
-   </div>
+    </div>
   );
 }
