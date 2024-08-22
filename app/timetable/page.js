@@ -3,6 +3,7 @@
   import BtnContainer from "@/components/BtnContainer";
   import { useState } from "react";
   import TestBtnComponenet from "@/components/TestBtnComponent";
+  import TimeButton from "@/components/TimeButton";
 
   export default function Time() {
     const [time, setTime] = useState();
@@ -56,42 +57,22 @@
             Välj en historia i listan nedan, sätt på dig hörlurarna och promenera tillbaka i tiden!
           </h2>
           <div className="flex flex-row justify-center gap-3">
-            <button
-              className={`text-2xl rounded-lg w-[122px] h-[72px] 
-            ${
-              time === 5
-                ? "bg-black text-white border-black"
-                : "bg-white text-black border-2 border-black hover:bg-black hover:text-white hover:border-white focus:outline-none focus:ring-black"
-            } `}
-              onClick={() => setTime(5)}
-            >
-              {" "}
-              5 min
-            </button>
-            <button
-              className={`text-2xl rounded-lg  w-[122px] h-[72px] 
-            ${
-              time === 10
-                ? "bg-black text-white border-white"
-                : "bg-white text-black border-2 border-black hover:bg-black hover:text-white hover:border-white focus:outline-none focus:ring-black"
-            } `}
-              onClick={() => setTime(10)}
-            >
-              {" "}
-              10 min
-            </button>
-            <button
-              className={`text-2xl rounded-lg w-[122px] h-[72px] 
-            ${
-              time === 15
-                ? "bg-black text-white border-white"
-                : "bg-white text-black border-2 border-black hover:bg-black hover:text-white hover:border-white focus:outline-none focus:ring-black"
-            } `}
-              onClick={() => setTime(15)}
-            >
-              {" "}
-              15 min
-            </button>
+            <TimeButton 
+              setTime={() => setTime(5)}
+              time={5}
+              selectedTime={time}
+            />
+            <TimeButton 
+            setTime={() => setTime(10)}
+            time={10}
+            selectedTime={time}
+            />
+            <TimeButton 
+            setTime={() => setTime(15)}
+            time={15}
+            selectedTime={time}
+            />
+    
           </div>
           {audioFiles
             .filter((file) => file.time == time || !time)
