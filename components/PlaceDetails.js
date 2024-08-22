@@ -15,7 +15,7 @@ const PlaceDetails = ({
   mapLink,
 }) => {
   return (
-    <div className="flex flex-col items-center px-5 mt-20">
+    <div className="flex flex-col items-center p-5">
       <BtnContainer audio={audio} time={time} title={audioTitle} />
       <div className="w-full h-64 relative mb-2 flex justify-center items-center">
         <Image

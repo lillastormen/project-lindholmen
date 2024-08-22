@@ -6,7 +6,7 @@ export default function Varvet2() {
   const placeInformation = {
     placeName: "Varvet 2",
     audioTitle: "Historien om Lammkotletten",
-    time: "5 min",
+    time: 5,
     audio: "/audio/lamkotletten.mp3",
     imageUrl: "/images/varvet2_karta.png",
     vintageUrl: "/images/lamkotletten.jpeg",

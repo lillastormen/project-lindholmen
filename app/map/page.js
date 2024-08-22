@@ -3,7 +3,10 @@ import PlaceCardContainer from "@/components/PlaceCardContainer";
 export default function Map() {
   return (
 
-    <div className="pt-20">
+    <>
+    <div className="bg-[url('/images/karta-background.png')] bg-contain fixed top-0 w-full h-full -z-10 opacity-50"></div>
+
+
         <h2 className="text-xl text-center p-5">
         Vart vill du gå? Välj en destination för din promenad, och få ljudklipp relaterade till omgivningen.
         </h2>
@@ -47,6 +50,7 @@ export default function Map() {
         url="/places/Varvet2"
       />
       </div>
-    </div>
+    
+      </>
   );
 }
