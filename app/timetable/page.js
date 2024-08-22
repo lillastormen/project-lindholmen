@@ -8,33 +8,49 @@ export default function Time() {
 
   const audioFiles = [
     {
+      label: 1,
       title: "Title 1",
       time: 10,
       file: "/pirate.mp3",
     },
     {
+      label: 2,
       title: "Brittas uppsägning",
       time: 15,
       file: "/pirate.mp3",
     },
     {
+      label: 3, 
       title: "Title 3",
       time: 5,
       file: "/pirate.mp3",
     },
     {
+      label: 4,
       title: "Title 4",
       time: 15,
       file: "/pirate.mp3",
     },
+    {
+      label: 5,
+      title: "Title 5",
+      time: 5,
+      file: "/pirate.mp3",
+    },
   ];
+
+  const randomAudio = () => {
+    const times = [5, 10, 15];
+    const randomTime = times[Math.floor(Math.random() * times.length)];
+    setTime(randomTime);
+  };
+
 
   return (
     <>
       <div className="pt-20">
-        <h2 className="text-xl text-center p-5">
-          Välj en historia i listan nedan, sätt på dig hörlurarna och promenera
-          tillbaka i tiden!
+        <h2 className="text-xl text-center py-5 mx-2">
+          Välj en historia i listan nedan, sätt på dig hörlurarna och promenera tillbaka i tiden!
         </h2>
         <div className="flex flex-row justify-center gap-2.5">
           <button
@@ -84,6 +100,15 @@ export default function Time() {
               audio={file.file}
             />
           ))}
+
+        <div className="flex justify-center mt-5">
+          <button
+            className="text-2xl bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-700 focus:outline-none"
+            onClick={randomAudio}
+          >
+            Random
+          </button>
+        </div>
       </div>
     </>
   );

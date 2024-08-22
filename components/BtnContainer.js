@@ -9,7 +9,6 @@ export default function BtnContainer({ title, time, audio }) {
             </div>
             <PlayPauseBtn 
                 audio={audio}
-                
             />
         </div>
     )
