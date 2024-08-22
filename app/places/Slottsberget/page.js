@@ -5,9 +5,9 @@ import CommentsSection from "@/components/CommentsSection"; // Adjust the import
 export default function Slottsberget() {
   const placeInformation = {
     placeName: "Slottsberget",
-    audioTitle: "Slottsberget",
-    audioTime: "10min",
-    audio: "/slottsberget.mp3",
+    audioTitle: "Blev Blanca imponerad?",
+    time: "10min",
+    audio: "/audio/slottsberget.mp3",
     imageUrl: "/images/karta_slottsberget.png",
     vintageUrl: "/images/slottsberget.jpg",
     mapLink:

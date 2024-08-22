@@ -4,9 +4,11 @@ import CommentsSection from "@/components/CommentsSection"; // Adjust the import
 
 export default function Telefonstolpen() {
   const placeInformation = {
-    clipTitle: "",
+    audioTitle:"Innovation",
     placeName: "Telefonstolpen",
     imageUrl: "/images/telefonstolpen_karta.png",
+    time: "10 min",
+    audio:"/audio/telefonstolpen.mp3",
     vintageUrl: "/images/telefonstolpen.jpeg",
     mapLink:
       "https://www.google.se/maps/place/Slottsberget/@57.704766,11.9276993,16.88z/data=!4m10!1m2!2m1!1sslottsberget!3m6!1s0x464ff30666120eef:0xf84ff4ad8495c61f!8m2!3d57.703813!4d11.9291447!15sCgxzbG90dHNiZXJnZXSSARNoaXN0b3JpY2FsX2xhbmRtYXJr4AEA!16s%2Fg%2F11g2368zr4?entry=ttu",
