@@ -7,13 +7,14 @@ export default function Aftonstjarnan() {
     clipTitle: "",
     placeName: "Aftonstjärnan",
     imageUrl: "/images/aftis.jpg",
-    description: "Description comes here",
+    teaser: "",
+    description: "",
   };
 
   return (
     <>
       <PlaceDetails {...placeInformation} />
-      <CommentsSection tableName="aftonstjarnan" />
+      <CommentsSection tableName="aftonstjarnan" story="" />
     </>
   );
 }

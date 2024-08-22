@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { supabase } from "@/supabaseClient";
 
-export default function CommentsSection({ tableName }) {
+export default function CommentsSection({ tableName, story }) {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState({ username: "", comment: "" });
   const [loading, setLoading] = useState(true);
@@ -62,10 +62,11 @@ export default function CommentsSection({ tableName }) {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="w-full p-2 flex flex-col gap-2 bg-slate-100 max-h-[300px] overflow-scroll">
+    <div className="flex flex-col justify-center items-center px-5 my-4 gap-2">
+      <h3 className="text-black text-lg">{story}</h3>
+      <div className="w-full flex flex-col gap-2  max-h-[300px] overflow-scroll mb-4">
         {loading ? (
-          <p>Loading comments...</p>
+          <p>Laddar stories...</p>
         ) : comments.length > 0 ? (
           comments.map((comment) => {
             if (!comment) return null; // Skip null or undefined comments
@@ -73,7 +74,7 @@ export default function CommentsSection({ tableName }) {
             const { username = "Anonym", comment: commentText } = comment;
 
             return (
-              <div className="bg-[#FAE6D3] rounded-[10px] p-2" key={comment.id}>
+              <div className="bg-[#ffdcba] rounded-[10px] p-2" key={comment.id}>
                 <p>
                   <strong className="underline">{username}</strong>
                 </p>
@@ -86,15 +87,15 @@ export default function CommentsSection({ tableName }) {
         )}
       </div>
 
-      <form onSubmit={handleSubmit} className="w-full p-2">
+      <form onSubmit={handleSubmit} className="w-full">
         <div>
           <input
+            className="w-full p-2 mb-2 border rounded bg-[#FAE6D3]"
             type="text"
             name="username"
             value={newComment.username}
             onChange={handleChange}
             placeholder="Anonym"
-            className="w-full p-2 mb-2 border rounded"
             autoComplete="off"
           />
         </div>
@@ -112,7 +113,7 @@ export default function CommentsSection({ tableName }) {
         <div className="flex justify-end">
           <button
             type="submit"
-            className="w-[154px] h-[42px] rounded-[10px] bg-[#266041] text-[#F3C69B]"
+            className="w-[154px] h-[42px] rounded-[10px] bg-black text-white"
           >
             Skicka
           </button>
