@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <main className="relative flex flex-col gap-56 h-screen justify-center items-center w-full">
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        className="absolute top-0 left-0 w-full h-full object-cover "
         src="/herovideo.mp4"
         preload="auto"
         autoPlay
@@ -47,11 +47,11 @@ export default function Home() {
       >
         @capturedbyfelix
       </a>
-      <h1 className="text-4xl text-white font-bold rounded text-center">
+      <h1 className="text-4xl text-white font-bold rounded text-center z-10">
         Upptäck <br /> Lindholmen
       </h1>
 
-      <div className="flex flex-col gap-4 justify-center text-center items-center text-white">
+      <div className="flex flex-col gap-4 justify-center text-center items-center text-white z-10">
         <p className=" max-w-[340px]">
           Låt historierna sätta tiden på din promenad eller utforska platser på
           Lindholmen medan du lyssnar på dess historier. <br />
