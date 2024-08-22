@@ -52,7 +52,7 @@
     return (
       <>
         <div className="pt-20">
-          <h2 className="text-xl text-center pt-12 pb-5 mx-3">
+          <h2 className="text-xl text-center pt-3.5 pb-5 mx-3">
             Välj en historia i listan nedan, sätt på dig hörlurarna och promenera tillbaka i tiden!
           </h2>
           <div className="flex flex-row justify-center gap-3">

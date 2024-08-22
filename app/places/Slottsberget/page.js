@@ -6,8 +6,8 @@ export default function Slottsberget() {
   const placeInformation = {
     placeName: "Slottsberget",
     audioTitle: "Slottsberget",
-    audioTime: "10min",
-    audio: "/slottsberget.mp3",
+    time: "10min",
+    audio: "/audio/slottsberget.mp3",
     imageUrl: "/images/karta_slottsberget.png",
     vintageUrl: "/images/slottsberget.jpg",
     mapLink:

@@ -5,9 +5,8 @@ import BtnContainer from "@/components/BtnContainer";
 
 export default function Karlatornet() {
   const placeInformation = {
-    clipTitle: "",
     placeName: "Karlatornet",
-    audio: "/karlatornet.mp3",
+    audio: "/audio/karlatornet.mp3",
     time: "10 min",
     audioTitle: "Britta på Karlatornet",
     imageUrl: "/images/karlatornet_karta.png",

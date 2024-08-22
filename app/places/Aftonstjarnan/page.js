@@ -1,12 +1,14 @@
 import React from "react";
 import PlaceDetails from "@/components/PlaceDetails";
 import CommentsSection from "@/components/CommentsSection";
+import BtnContainer from "@/components/BtnContainer";
 
 export default function Aftonstjarnan() {
   const placeInformation = {
-    clipTitle: "",
-    audio: "/aftonstjärnan.mp3",
     placeName: "Aftonstjärnan",
+    audio: "/audio/aftonstjärnan.mp3",
+    time: "5 min",
+    audioTitle: "Aftonstjärnan and more",
     imageUrl: "/images/aftonstjarnan_karta.png",
     vintageUrl: "/images/aftis.jpg",
     mapLink:
