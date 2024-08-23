@@ -15,7 +15,10 @@ export default function CommentsSection({ tableName, story }) {
 
   const fetchComments = async () => {
     try {
-      const { data, error } = await supabase.from(tableName).select("*");
+      const { data, error } = await supabase
+        .from(tableName)
+        .select("*")
+        .order("likes", { ascending: false });
       if (error) {
         console.error("Error fetching comments:", error);
       } else {
