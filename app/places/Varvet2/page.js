@@ -10,7 +10,7 @@ export default function Varvet2() {
     audio: "/audio/lammkotletten.mp3",
     imageUrl: "/images/varvet2_karta.png",
     vintageUrl: "/images/lamkotletten.jpeg",
-    mapLink: "https://maps.app.goo.gl/4ymwLdqVZ8KFRmch6",
+    mapLink: "https://maps.app.goo.gl/RSNcBo7sNaNeEGYW8",
     teaser:
       "Många var historierna om arbetarna på varvet, här har vi den om lammkotletten, läkaren och det förrädiska emaljögat. ",
     description:
