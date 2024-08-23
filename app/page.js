@@ -59,13 +59,13 @@ export default function Home() {
         </p>
         <div className="flex gap-8">
           <Link href="/timetable">
-            <button className="bg-orange-400/[0.9] rounded-[10px] py-4 w-[100px]">
+            <button className="bg-orange-400/[0.9] rounded-[10px] py-4 w-[140px]">
               <p className="text-sm">Håll tiden</p>
             </button>
           </Link>
 
           <Link href="/map">
-            <button className="bg-orange-400/[0.9] rounded-[10px] py-4 w-[100px]">
+            <button className="bg-orange-400/[0.9] rounded-[10px] py-4 w-[140px]">
               <p className="text-sm">Utforska</p>
             </button>
           </Link>
