@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Info() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-24 gap-2 text-sm">
+    <main className="flex min-h-screen flex-col items-center justify-between gap-2 pb-6 text-sm">
       <div className="flex flex-col px-8 gap-4 text-center max-w-96">
         <h2 className="font-semibold text-xl">
           Upptäck Lindholmens fascinerande historia
