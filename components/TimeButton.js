@@ -2,7 +2,7 @@ export default function TimeButton({ time, selectedTime, setTime }) {
   return (
     <button
       onClick={() => setTime(time)}
-      className={`text-xl rounded-lg w-[100px] h-[72px] 
+      className={`text-xl rounded-lg w-[90px] h-[60px] 
               ${
                 time === selectedTime
                   ? "bg-black text-white border-black"

@@ -25,13 +25,18 @@ export default function Time() {
     },
     {
       title: "Femöringen",
-      time: 15,
+      time: 5,
       file: "/audio/femoringen.mp3",
     },
     {
       title: "245 meter över havet",
       time: 10,
       file: "/audio/karlatornet.mp3",
+    },
+    {
+      title: "Historien om Lammkotletten",
+      time: 15,
+      file: "/audio/lammkotletten.mp3",
     },
   ];
 
@@ -43,28 +48,28 @@ export default function Time() {
 
   return (
     <>
-      <div className="relative h-screen w-full pt-24 px-5 flex flex-col items-center">
+      <div className="relative  h-screen w-full px-5 flex flex-col gap-3 items-center">
         <Image
           src="/images/karta-background.png"
           alt="karta"
           fill
           objectfit="cover"
           priority
-          className="absolute left-0 top-0   w-full h-full -z-10 opacity-50 object-cover"
+          className="absolute left-0 top-0 w-full h-full -z-10 opacity-50 object-cover "
         />
-        <h2 className="text-lg text-center">
+        <h2 className="text-lg text-center pt-4 ">
           Välj en historia i listan nedan, sätt på dig hörlurarna och promenera
           tillbaka i tiden!
         </h2>
-        <div className="flex flex-col justify-between items-center">
+        {/* <div className="flex flex-col justify-between items-center">
           <button onClick={randomAudio}>
             <div className="flex flex-col justify-between items-center py-2">
               <img src="/icons/shuffle.svg" className="size-10" />
               Välj åt mig
             </div>
           </button>
-        </div>
-        <div className="flex flex-row justify-center gap-4 mb-2">
+        </div> */}
+        <div className="flex flex-row justify-center gap-6 p-4">
           <TimeButton setTime={() => setTime(5)} time={5} selectedTime={time} />
           <TimeButton
             setTime={() => setTime(10)}

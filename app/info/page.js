@@ -32,11 +32,7 @@ export default function Info() {
           inom manusförfattande, UX-design och webbutveckling.
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center m-2">
-        <h2 className="font-semibold text-xl text-center">Skapad av</h2>
-        <p className="font-thin">Yrgo Studenterna</p>
-      </div>
-      <div className="flex pb-2 max-w-[500px] w-full">
+      <div className="flex pb-2  mt-4 max-w-[500px] w-full">
         <div className="flex flex-col items-center gap-2 text-xs w-1/3">
           <div className="w-12 h-12 bg-black rounded-full items-center text-white justify-center flex">
             <p>WU</p>
@@ -52,7 +48,7 @@ export default function Info() {
           <p className="underline">UX-designers</p>
           <p>Louise Alveflo</p>
           <p>Emma Lindström</p>
-          <p>Fannie Lundh</p>
+          <p>Fannie Lund</p>
         </div>
         <div className="flex flex-col items-center gap-2 text-xs w-1/3">
           <div className="w-12 h-12 bg-black rounded-full items-center text-white justify-center flex">

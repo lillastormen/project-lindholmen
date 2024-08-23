@@ -4,21 +4,21 @@ import Image from "next/image";
 export default function Map() {
   return (
     <>
-      <div className="relative h-screen pt-24">
+      <div className="relative h-screen">
         <Image
           src="/images/karta-background.png"
           alt="karta"
           fill
-          objectfit="contain"
+          objectfit="cover"
           priority
-          className="absolute left-0 top-0 w-full -z-10 opacity-50"
+          className="absolute left-0 top-0 w-full h-full -z-10 opacity-50 object-cover"
         />
-        <h2 className="text-xl text-center p-5">
+        <h2 className="text-lg text-center p-5">
           Vart vill du gå? Välj en destination för din promenad, och få
           ljudklipp relaterade till omgivningen.
         </h2>
 
-        <div className="flex flex-col justify-center gap-2.5">
+        <div className="flex flex-col justify-center gap-3">
           <PlaceCardContainer
             title="Aftonstjärnan"
             time="20 min"
