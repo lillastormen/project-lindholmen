@@ -10,12 +10,14 @@ export default function Varvet2() {
     audio: "/audio/lammkotletten.mp3",
     imageUrl: "/images/varvet2_karta.png",
     vintageUrl: "/images/lamkotletten.jpeg",
-    mapLink: "https://www.google.se/maps/@57.7056373,11.9411532,16z?entry=ttu",
+    mapLink: "https://maps.app.goo.gl/4ymwLdqVZ8KFRmch6",
     teaser:
       "Många var historierna om arbetarna på varvet, här har vi den om lammkotletten, läkaren och det förrädiska emaljögat. ",
     description:
       "Historien om Lammkotletten. Är den helt sann? Ja, det här är en omtyckt historia, som alltid låter lite annorlunda beroende på vem som återberättar den. Men arbetsplatsolyckorna var vanliga på varven även om det med tiden blev bättre säkerhet. Historierna om vad man hade sett eller en kollega hade sett var många, och inte alltid sanna. Lammkotletten jobbade på varvet. Hur han hade fått sitt smeknamn lämnas till historien, men ett som är säkert är att han hade ett öga som var av emalj. Så en dag så rasade en pall över honom. Fastklämd under pallen kallade kollegorna på hjälp. Larmet gick och ambulans kallades dit. Läkaren gick fram till lammkotletten och öppnade ögat, eftersom han inte visste att det var ett emaljöga så suckade han bara och sa “han är död”. Lammkotletten vrider då på huvudet och utbrister “det är jag inte alls” varpå hans förman utbrister “tyst med dig, lyssna på läkaren, han är skolad”. ",
   };
+
+  // map link "https://www.google.se/maps/@57.7056373,11.9411532,16z?entry=ttu"
 
   return (
     <>
