@@ -82,7 +82,41 @@ export default function CommentsSection({ tableName, story }) {
   return (
     <div className="flex flex-col justify-center items-center px-5 my-4 gap-2">
       <h3 className="text-black text-lg">{story}</h3>
-      <div className="w-full flex flex-col gap-2  max-h-[300px] overflow-scroll mb-4">
+      <form onSubmit={handleSubmit} className="w-full">
+        <div>
+          <textarea
+            className="w-full h-[200px] bg-[#FAE6D3] rounded-[10px] p-2"
+            id="text"
+            name="comment"
+            placeholder="Vilken är din berättelse?"
+            value={newComment.comment}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="flex gap-4 mt-2">
+          <div>
+            <input
+              className="w-full p-2 mb-2 border rounded-[10px] bg-[#FAE6D3]"
+              type="text"
+              name="username"
+              value={newComment.username}
+              onChange={handleChange}
+              placeholder="Namn"
+              autoComplete="off"
+            />
+          </div>
+          <div className="flex justify-end">
+            <button
+              type="submit"
+              className="w-[154px] h-[42px] rounded-[10px] bg-black text-white"
+            >
+              Skicka
+            </button>
+          </div>
+        </div>
+      </form>
+      <div className="w-full flex flex-col gap-2 mt-4 overflow-scroll mb-4">
         {loading ? (
           <p>Laddar kommentarer...</p>
         ) : comments.length > 0 ? (
@@ -126,39 +160,6 @@ export default function CommentsSection({ tableName, story }) {
           <p>Inga kommentarer än.</p>
         )}
       </div>
-
-      <form onSubmit={handleSubmit} className="w-full">
-        <div>
-          <input
-            className="w-full p-2 mb-2 border rounded bg-[#FAE6D3]"
-            type="text"
-            name="username"
-            value={newComment.username}
-            onChange={handleChange}
-            placeholder="Anonym"
-            autoComplete="off"
-          />
-        </div>
-        <div>
-          <textarea
-            className="w-full h-[200px] bg-[#FAE6D3] rounded-[10px] p-2"
-            id="text"
-            name="comment"
-            placeholder="Vilken är din berättelse?"
-            value={newComment.comment}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="flex justify-end">
-          <button
-            type="submit"
-            className="w-[154px] h-[42px] rounded-[10px] bg-black text-white"
-          >
-            Skicka
-          </button>
-        </div>
-      </form>
     </div>
   );
 }

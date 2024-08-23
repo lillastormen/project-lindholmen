@@ -28,7 +28,7 @@ const TruncatedText = ({ text, maxLength }) => {
       {text.length > maxLength && (
         <button
           onClick={toggleExpansion}
-          className="bg-black text-white p-2 my-2 rounded-[10px] text-sm"
+          className="bg-black text-white p-2 px-4 my-2 rounded-[10px] text-sm"
         >
           {isExpanded ? "Läs mindre" : "Läs mer"}
         </button>
